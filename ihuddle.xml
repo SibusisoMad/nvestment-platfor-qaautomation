@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="iHuddle Test Suite" verbose="1" parallel="false">
+<listeners>
+     <listener class-name="src.com.easy.TestNGCustomReportListener"/>
+     <listener class-name="src.com.pack.listeners.TestListener"/>
+     
+ </listeners>
+<parameter name="sitename" value="iHuddle"/>
+<parameter name="aURL" value="https://tic-admin-uat.azurewebsites.net/"/>
+<parameter name="cURL" value="https://tic-client-uat.azurewebsites.net/"/>
+<parameter name="aUser" value="TU00000001"/>
+<parameter name="aPassword" value="Tu00000001"/>
+<parameter name="cPassword" value="!Password1"/>
+<parameter name="env" value="UAT"/>
+<parameter name="uCompany" value="aihuddle"/>
+<parameter name="outlookemail" value="rajeev@atomcto.com"/>
+<parameter name="outlookPassword" value=""/>
+<parameter name="file" value="C:\\Users\\Ricky\\Downloads\\Terms and Conditions.pdf"/>
+<parameter name="depositdata" value="data\\deposits.txt"/>
+<!--<parameter name="browserType" value="phone"/>-->
+<!-- <parameter name="browserType" value="Chrome"/> -->
+
+
+<suite-files>
+	<suite-file path="scenario.xml"/>
+</suite-files>
+
+</suite>

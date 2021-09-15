@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="General Website Test" preserve-order="true" >
+
+	<test name="Tested on Client Website on Chrome" verbose="1"
+		preserve-order="true">
+		 <parameter name="browserType" value="Chrome" /> 
+		<groups>
+			<run>
+				<!--   <exclude name="SignUp"/> -->
+			</run>
+		</groups>
+
+
+		<classes>
+			<class name="src.com.pack.common.tests.SignUpTest" />							
+			<class name="src.com.pack.common.tests.RegistrationTest" />		
+			<class name="src.com.pack.common.tests.ADealInvestorPageTest" />  
+			<class name="src.com.pack.common.tests.ADealCreateTest" />
+			<class name="src.com.pack.common.tests.AInvestonDealTest" />
+			<class name="src.com.pack.common.tests.ADeletePageTest" />
+			<class name="src.com.pack.common.tests.CDealCreateTest" />
+			<class name="src.com.pack.common.tests.IconPageTest" />
+			<class name="src.com.pack.common.tests.DealViewTest" />
+		</classes>
+	</test>
+
+	<!-- <test name="Tested on Client Website on Firefox" verbose="1"
+		preserve-order="true">
+		<parameter name="browserType" value="firefox" />
+		<groups>
+			<run>
+			 	 <exclude name="SignUp"/> 
+			</run>
+		</groups>
+
+
+		<classes>
+			<class name="src.com.pack.common.tests.SignUpTest" />							
+			 <class name="src.com.pack.common.tests.RegistrationTest" />
+			 <class name="src.com.pack.common.tests.ADealInvestorPageTest" />  
+			 <class name="src.com.pack.common.tests.ADealCreateTest" />
+			 <class name="src.com.pack.common.tests.AInvestonDealTest" />
+			 <class name="src.com.pack.common.tests.ADeletePageTest" />
+			 <class name="src.com.pack.common.tests.CDealCreateTest" />
+			 <class name="src.com.pack.common.tests.IconPageTest" />
+			 <class name="src.com.pack.common.tests.DealViewTest" />
+		</classes>
+	</test>-->
+
+
+</suite>
