@@ -1,0 +1,713 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Detailed Report</title>
+<style type="text/css">
+p.detail { color:#000000;font-family:'hurme_geometric_sans_4regular' !important;font-size:12 }
+span.namep { color:#008000;font-weight:bold;font-family:'hurme_geometric_sans_4regular' !important;font-size:12 }
+span.namef { color:#FF0000;font-weight:bold;font-family:'hurme_geometric_sans_4regular' !important;font-size:12 }
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn, .numi_passed {text-align:right}
+.total td {font-weight:bold}
+.passedodds  {background-color: #3F3}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.passed td,.numi_passed {background-color: #3F3}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.failedemailodd td,.numiemail {background-color: #FF7797;font-family:'hurme_geometric_sans_4regular' !important;font-size:12}
+.failedemaileven td,.stripe .numiemail  {background-color: #FF5B82;font-family:'hurme_geometric_sans_4regular' !important;font-size:12}
+.stacktrace {white-space:pre;font-family:'hurme_geometric_sans_4regular' !important;}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<center><h2>iHuddle Detailed Report - 15-09-2021 17:07:36</h2></center><table cellspacing=0 cellpadding=0 class="testOverview">
+<tr><th>Scenario</th><th>Methods<br/>Passed</th><th># skipped</th><th># failed</th><th>Browser</th><th>Start<br/>Time</th><th>End<br/>Time</th><th>Total<br/>Time(hh:mm:ss)</th><th>Environment</th><th>Excluded<br/>Scenario</th></tr>
+<tr><th colspan="10">General Website Test-UAT environment</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1"><b>Tested on Client Website on Chrome</b></a></td><td class="numi">5</td><td class="numi">0</td><td class="numi_attn">21</td><td class="numi">null</td></td>
+<td class="numi">04:52:49</td></td>
+<td class="numi">05:07:35</td></td>
+<td class="numi">00:14:46</td><td class="numi">UAT</td><td class="numi"></td></tr>
+<tr><th colspan="10">iHuddle Test Suite-UAT environment</th></tr>
+</table>
+<table cellspacing=0 cellpadding=0 class="methodOverview" id="Summary">
+<tr><th>Class</th><th>Exception Info</th><th>Start Time </th><th>Execution Time<br/>(hh:mm:ss)</th></tr>
+<tr><th colspan="5">General Website Test</th></tr>
+<tr id="t1"><th colspan="5">Tested on Client Website on Chrome &#8212; failed</th></tr>
+<tr class="failedodd"><td>Delete Investment of Investor</td><td><a href="#m1><b>dDeleteInvestment</b> (DeleteInvestment) (Delete Investment of Investor)</a></td><td class="numi" style="text-align:left;padding-right:2em">java.lang.IllegalArgumentException: bound must be positive<br/></td><td style="text-align:right">05:02:38</td><td class="numi">00:01:00</td></tr>
+<tr class="failedeven"><td>Verify Signup User in Admin</td><td><a href="#m2><b>verifyuserinAdmin</b> (Check_User_inAdmin) (Verify Signup User in Admin)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}<br/></td><td style="text-align:right">04:55:32</td><td class="numi">00:00:26</td></tr>
+<tr class="failedodd"><td>Delete Document of Investor</td><td><a href="#m3><b>adeleteInvestorImage</b> (DeleteImage) (Delete Document of Investor)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}<br/></td><td style="text-align:right">05:03:47</td><td class="numi">00:00:27</td></tr>
+<tr class="failedeven"><td>Signup to iHuddle</td><td><a href="#m4><b>Signup</b> (SignUp) (Signup to iHuddle)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;customCheckTerms&apos;]&quot;}<br/></td><td style="text-align:right">04:52:53</td><td class="numi">00:00:28</td></tr>
+<tr class="failedodd"><td>Client creates a deal</td><td><a href="#m5><b>dealDetails</b> (Create Deal ) (Client creates a deal)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Create Deal&apos;]&quot;}<br/></td><td style="text-align:right">05:04:49</td><td class="numi">00:00:24</td></tr>
+<tr class="failedeven"><td>Verify Signup User in Admin</td><td><a href="#m6><b>verifyuserinAdmin</b> (Check_User_inAdmin) (Verify Signup User in Admin)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}<br/></td><td style="text-align:right">04:53:26</td><td class="numi">00:00:26</td></tr>
+<tr class="failedodd"><td>Check invitations for a deal and invest in one of them</td><td><a href="#m7><b>InvitationsDeal</b> (Deal View Invitations) (Check invitations for a deal and invest in one of them)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Invitation&apos;]&quot;}<br/></td><td style="text-align:right">05:06:19</td><td class="numi">00:00:23</td></tr>
+<tr class="failedeven"><td>Add user Documents</td><td><a href="#m8><b>UploadUserDocuments</b> (AddDocuments) (Add user Documents)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}<br/></td><td style="text-align:right">04:58:39</td><td class="numi">00:00:47</td></tr>
+<tr class="failedodd"><td>Add Depost</td><td><a href="#m9><b>AddDepositAmount</b> (AddDeposit) (Add Depost)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}<br/></td><td style="text-align:right">04:57:46</td><td class="numi">00:00:48</td></tr>
+<tr class="failedeven"><td>Upload Document on Deal</td><td><a href="#m10><b>aUploadDocumentOnDeal</b> (UploadDoc) (Upload Document on Deal)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}<br/></td><td style="text-align:right">05:01:40</td><td class="numi">00:00:26</td></tr>
+<tr class="failedodd"><td>Check MyOrigination and edit a deal</td><td><a href="#m11><b>MyOriginationDeal</b> (Deal View MyOrigination) (Check MyOrigination and edit a deal)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;View All&apos;]&quot;}<br/></td><td style="text-align:right">05:06:47</td><td class="numi">00:00:20</td></tr>
+<tr class="failedeven"><td>Verify Signup Email</td><td><a href="#m12><b>VerifyEmail</b> (EmailVerify) (Verify Signup Email)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Verify Email&apos;]&quot;}<br/></td><td style="text-align:right">04:53:56</td><td class="numi">00:00:50</td></tr>
+<tr class="failedodd"><td>Invest on Deal</td><td><a href="#m13><b>bInvestonDeal</b> (InvestonDeal) (Invest on Deal)</a></td><td class="numi" style="text-align:left;padding-right:2em">java.lang.NullPointerException: Cannot load from object array because &quot;dealDetail&quot; is null<br/></td><td style="text-align:right">05:02:10</td><td class="numi">00:00:00</td></tr>
+<tr class="failedeven"><td>Update Investor contact Detail from Admin</td><td><a href="#m14><b>updateContactDetail</b> (Update_Investor_Contact_inAdmin) (Update Investor contact Detail from Admin)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}<br/></td><td style="text-align:right">04:56:02</td><td class="numi">00:00:47</td></tr>
+<tr class="failedodd"><td>Check My details and Edit Details</td><td><a href="#m15><b>MyProfileDetails</b> (My details View Page) (Check My details and Edit Details)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/MyDetails&apos;]&quot;}<br/></td><td style="text-align:right">05:05:49</td><td class="numi">00:00:22</td></tr>
+<tr class="failedeven"><td>Check Balance in Investor</td><td><a href="#m16><b>cverifyAmountInvestor</b> (VerifyInvestorAmount) (Check Balance in Investor)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;dealInvestor&apos;]//div/dl/dd/a&quot;}<br/></td><td style="text-align:right">05:02:14</td><td class="numi">00:00:20</td></tr>
+<tr class="failedodd"><td>Check Openhuddles and Invest in a deal</td><td><a href="#m17><b>OpenHuddlesDeal</b> (Deal View OpenHuddles) (Check Openhuddles and Invest in a deal)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Market&apos;]&quot;}<br/></td><td style="text-align:right">05:07:11</td><td class="numi">00:00:20</td></tr>
+<tr class="failedeven"><td>Check notification and Set Prefrences</td><td><a href="#m18><b>NotificationSet</b> (Notification View Page) (Check notification and Set Prefrences)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/Notifications&apos;]&quot;}<br/></td><td style="text-align:right">05:05:19</td><td class="numi">00:00:26</td></tr>
+<tr class="failedodd"><td>Delete a Deal</td><td><a href="#m19><b>bdeleteDeal</b> (DeleteDeal) (Delete a Deal)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;deal-table&apos;]/tbody/tr/td/a&quot;}<br/></td><td style="text-align:right">05:04:18</td><td class="numi">00:00:24</td></tr>
+<tr class="failedeven"><td>Update Investor contact Detail from Admin</td><td><a href="#m20><b>updateRegistrationStatus</b> (Update_Investor_Contact_inAdmin) (Update Investor contact Detail from Admin)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}<br/></td><td style="text-align:right">04:56:54</td><td class="numi">00:00:48</td></tr>
+<tr class="failedodd"><td>Select Self Accreditation Option</td><td><a href="#m21><b>selfAccredition</b> (SelfAccreditation) (Select Self Accreditation Option)</a></td><td class="numi" style="text-align:left;padding-right:2em">java.lang.IllegalArgumentException: bound must be positive<br/></td><td style="text-align:right">04:54:52</td><td class="numi">00:00:24</td></tr>
+<tr><th colspan="5">Tested on Client Website on Chrome &#8212; passed</th></tr>
+<tr class="passedodd"><td>Bank Detail of user</td><td><a href="#m22><b>bankDetail</b> (BankDetail) (Bank Detail of user)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:55:24</td><td class="numi">00:00:02</td></tr>
+<tr class="passedeven"><td>Document Upload of user</td><td><a href="#m23><b>documents</b> (Document) (Document Upload of user)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:55:26</td><td class="numi">00:00:02</td></tr>
+<tr class="passedodd"><td>Contact Detail of user</td><td><a href="#m24><b>contactInfo</b> (ContactInfo) (Contact Detail of user)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:55:20</td><td class="numi">00:00:04</td></tr>
+<tr class="passedeven"><td>Create a new Deal in Admin</td><td><a href="#m25><b>CreateDealAdmin</b> (Create_Deal_inAdmin) (Create a new Deal in Admin)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">05:00:20</td><td class="numi">00:01:17</td></tr>
+<tr class="passedodd"><td>Check Message for Mandatory Fields</td><td><a href="#m26><b>MandatoryFieldDeal</b> (Mandatory_Field_Check) (Check Message for Mandatory Fields)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:59:33</td><td class="numi">00:00:47</td></tr>
+<tr><th colspan="5">iHuddle Test Suite</th></tr>
+</table>
+<h2>Tested on Client Website on Chrome</h2>
+<h3 id="m1">:Verify Signup Email</h3>
+<div >
+<table>
+<tr>
+<td>
+Open Outlook and Verify Email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Outlook Email Entered - rajeev@atomcto.com
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Password Entered - 
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/3vcr9iim4y3igxa/15-09-2021-16-53-21-Signup.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Verify Email&apos;]&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">:Check Openhuddles and Invest in a deal</h3>
+<div >
+<h4><font color="red"><a href =https://www.dropbox.com/s/253c2p8r2humg43/15-09-2021-16-53-52-verifyuserinAdmin.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Market&apos;]&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">:Select Self Accreditation Option</h3>
+<div >
+<table>
+<tr>
+<td>
+Email Entered - aihuddle-Chrome15-09@discard.com
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - !Password1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Submit Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/jxvqi8ath9mczd3/15-09-2021-16-54-46-VerifyEmail.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">java.lang.IllegalArgumentException: bound must be positive</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">:Client creates a deal</h3>
+<div >
+<table>
+<tr>
+<td>
+Email Entered - aihuddle-Chrome15-09@discard.com
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - !Password1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Submit Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/z83kkzjsqxdsnsf/15-09-2021-16-55-16-selfAccredition.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Create Deal&apos;]&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">:Update Investor contact Detail from Admin</h3>
+<div >
+<table>
+<tr>
+<td>
+Email Entered - TU00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - Tu00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Submit Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/6uwnafbrvmwzqns/15-09-2021-16-55-58-verifyuserinAdmin.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">:Verify Signup User in Admin</h3>
+<div >
+<table>
+<tr>
+<td>
+Email Entered - TU00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - Tu00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Submit Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/qqieod8xtxs1bfu/15-09-2021-16-56-49-updateContactDetail.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">:Signup to iHuddle</h3>
+<div >
+<table>
+<tr>
+<td>
+First Name Entered - 
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Last Name Entered - 
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Address Entered - aihuddle-Chrome15-09@discard.com
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - 
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Retype Password Entered - 
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/4414jl9jor6ekmp/15-09-2021-16-57-42-updateRegistrationStatus.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;customCheckTerms&apos;]&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">:Check Balance in Investor</h3>
+<div >
+<h4><font color="red"><a href =https://www.dropbox.com/s/3vjo4zww5va41aa/15-09-2021-16-58-34-AddDepositAmount.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;dealInvestor&apos;]//div/dl/dd/a&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">:Delete a Deal</h3>
+<div >
+<table>
+<tr>
+<td>
+Total Deal -1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Deal to be Deleted-There are no records
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/xff0fdbn7lhrlhd/15-09-2021-16-59-26-UploadUserDocuments.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;deal-table&apos;]/tbody/tr/td/a&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">:Add Depost</h3>
+<div >
+<table>
+<tr>
+<td>
+Email Entered - TU00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - Tu00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Submit Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/b3dueae5u6ozy0i/15-09-2021-17-02-06-aUploadDocumentOnDeal.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">:Check My details and Edit Details</h3>
+<div >
+<h4><font color="red"><a href =https://www.dropbox.com/s/op9i78h98zpqr0c/15-09-2021-17-02-10-bInvestonDeal.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/MyDetails&apos;]&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">:Add user Documents</h3>
+<div >
+<table>
+<tr>
+<td>
+Email Entered - TU00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - Tu00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Submit Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/0z8b1y24q6ehinf/15-09-2021-17-02-34-cverifyAmountInvestor.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">:Delete Investment of Investor</h3>
+<div >
+<h4><font color="red"><a href =https://www.dropbox.com/s/uqvluvtgcc7fsuu/15-09-2021-17-03-38-dDeleteInvestment.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">java.lang.IllegalArgumentException: bound must be positive</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">:Verify Signup User in Admin</h3>
+<div >
+<table>
+<tr>
+<td>
+Email Entered - TU00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - Tu00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Submit Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/1irwwja8t6owwq1/15-09-2021-17-04-14-adeleteInvestorImage.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">:Delete Document of Investor</h3>
+<div >
+<table>
+<tr>
+<td>
+Email Entered - TU00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - Tu00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Submit Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/uukwl3beq2m067j/15-09-2021-17-04-42-bdeleteDeal.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">:Check invitations for a deal and invest in one of them</h3>
+<div >
+<table>
+<tr>
+<td>
+Email Entered - aihuddle-Chrome15-09@discard.com
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - !Password1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Submit Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/302l71yriw11nvy/15-09-2021-17-05-13-dealDetails.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Invitation&apos;]&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">:Invest on Deal</h3>
+<div >
+<h4><font color="red"><a href =https://www.dropbox.com/s/xz014kpqv4ourx9/15-09-2021-17-05-45-NotificationSet.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">java.lang.NullPointerException: Cannot load from object array because &quot;dealDetail&quot; is null</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">:Update Investor contact Detail from Admin</h3>
+<div >
+<table>
+<tr>
+<td>
+Email Entered - TU00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - Tu00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Submit Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/c7xr374bq8bro0q/15-09-2021-17-06-11-MyProfileDetails.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">:Check MyOrigination and edit a deal</h3>
+<div >
+<h4><font color="red"><a href =https://www.dropbox.com/s/wk0ltkgc9ddnqt9/15-09-2021-17-06-42-InvitationsDeal.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;View All&apos;]&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">:Check notification and Set Prefrences</h3>
+<div >
+<table>
+<tr>
+<td>
+Email Entered - aihuddle-Chrome15-09@discard.com
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - !Password1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Submit Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/zt9xvaskthe90lq/15-09-2021-17-07-07-MyOriginationDeal.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/Notifications&apos;]&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">:Upload Document on Deal</h3>
+<div >
+<table>
+<tr>
+<td>
+Email Entered - TU00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - Tu00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Submit Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =https://www.dropbox.com/s/j6fqqwgwe57eo8h/15-09-2021-17-07-31-OpenHuddlesDeal.png?dl=0 target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;dealinvestor-table&apos;]/tbody/tr/td/a&quot;}</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">:Create a new Deal in Admin</h3>
+<div >
+<table>
+<tr>
+<td>
+Email Entered - TU00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - Tu00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Submit Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Property
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Data is - 30000
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Deal Currency-British Pound (£)
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Deal Published
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Equity
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Data is - 15000
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Deal Currency-Euro (€)
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Deal Published
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Equity
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Data is - 35000
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Deal Currency-US Dollar ($)
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Deal Published
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">:Check Message for Mandatory Fields</h3>
+<div >
+<table>
+<tr>
+<td>
+Email Entered - TU00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Password Entered - Tu00000001
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Submit Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">:Contact Detail of user</h3>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">:Bank Detail of user</h3>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">:Document Upload of user</h3>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<center> &copy; Powered by Atom Ventures </center>
+</body></html>

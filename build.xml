@@ -6,7 +6,7 @@
               as the first entry and export the buildfile again. --><project basedir="." default="build" name="iHuddle">
     <property environment="env"/>
     <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="11"/>
+    <property name="target" value="1.8"/>
     <property name="source" value="16"/>
     <path id="TestNG.libraryclasspath">
         <pathelement location="../../../.p2/pool/plugins/org.testng_7.4.0.r202105021533.jar"/>
